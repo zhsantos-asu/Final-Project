@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Zenview Alpine Resort | Contact</title>
+
+    <meta name="author" content="Zenaida Santos">
+    <meta name="description" content="Contact Zenview Alpine Resort for questions about reservations, accommodations, or planning your dream vacation in the Swiss Alps.">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!-- Google Fonts (same as home page) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <div class="page-wrapper">
+      <header class="site-header">
+        <h1 class="site-title">
+          <a href="index.html">Zenview Alpine Resort</a>
+        </h1>
+
+        <nav class="site-nav" aria-label="Main site navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#accommodations">Accommodations</a></li>
+            <li><a href="contact.html" class="current">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <!-- Swiss valley hero image -->
+        <section class="hero">
+          <img src="images/swiss-valley.jpg"
+               width="1440"
+               height="560"
+               alt="Wide view of a green Swiss valley with a river running between forested slopes and snow-capped mountains.">
+        </section>
+
+        <section class="contact section-padding">
+  <h2 class="contact-heading">Contact Us</h2>
+
+  <div class="contact-layout">
+    <!-- LEFT COLUMN -->
+    <div class="contact-left">
+      <div class="contact-text">
+        <p>
+          Please reach out to us with any questions or concerns. We are happy
+          to help you plan your dream vacation with us!
+        </p>
+        <p class="required-note">
+          Required fields marked with a <span aria-hidden="true">*</span>
+        </p>
+      </div>
+
+      <figure class="contact-image">
+        <img src="images/swiss-peak.jpg"
+             width="350"
+             height="455"
+             alt="Steep snow-capped Swiss peak rising above a forested valley and river.">
+      </figure>
+    </div>
+
+    <!-- RIGHT COLUMN: form -->
+    <form class="contact-form"
+          method="post"
+          action="https://wp.zybooks.com/form-viewer.php">
+
+      <div class="form-field">
+        <label for="full-name">
+          Full Name <span aria-hidden="true">*</span>
+        </label>
+        <input type="text" id="full-name" name="full-name" required>
+      </div>
+
+      <div class="form-field">
+        <label for="email">
+          Email Address <span aria-hidden="true">*</span>
+        </label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="form-field">
+        <label for="phone">
+          Phone Number <span aria-hidden="true">*</span>
+        </label>
+        <input type="tel" id="phone" name="phone" required>
+      </div>
+
+      <fieldset class="form-field">
+        <legend>
+          Preferred Contact Method <span aria-hidden="true">*</span>
+        </legend>
+        <div class="radio-group">
+          <div class="radio-option">
+            <input type="radio"
+                   id="contact-email"
+                   name="preferred-contact"
+                   value="email"
+                   required>
+            <label for="contact-email">Email</label>
+          </div>
+          <div class="radio-option">
+            <input type="radio"
+                   id="contact-phone"
+                   name="preferred-contact"
+                   value="phone"
+                   required>
+            <label for="contact-phone">Phone</label>
+          </div>
+        </div>
+      </fieldset>
+
+      <div class="form-field">
+        <label for="comments">
+          Comments <span aria-hidden="true">*</span>
+        </label>
+        <textarea id="comments" name="comments" rows="5" required></textarea>
+      </div>
+
+      <div class="form-actions">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+</section>
+      </main>
+
+      <footer class="site-footer">
+        <p>Copyright &copy; 2025 &ndash; Zenview Alpine Resort</p>
+        <p>This site is for educational purposes only.</p>
+      </footer>
+    </div>
+  </body>
+</html>
